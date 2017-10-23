@@ -1,0 +1,479 @@
+@media (orientation: portrait) {
+.playfield { display: block; }
+.overlay { display: none; }
+}
+@media (orientation: landscape) {
+.playfield { display: none; }
+.overlay { display: block; }
+}
+
+@media only screen and (max-device-width : 1024px) {
+
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#frame {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+}
+
+#intro{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+props_show_on {
+    display: content
+}
+
+.main_back {
+    background: url(../../media/IMG/props/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6
+}
+
+.off_back {
+    background: url(../../media/IMG/props/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 1.5s
+}
+
+.off_back_insta {
+    background: url(../../media/IMG/props/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    transition: all 0s
+}
+
+.main_black_back_off {
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    opacity: 0;
+}
+
+.main_black_back {
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: black_back 10s linear;
+}  
+    
+@keyframes black_back{
+    0%{opacity: 0;z-index: -2}
+    55%{z-index: 9; opacity: 1}
+    65%{z-index: 9; opacity: 1}
+    100%{opacity: 0;z-index: -2}
+}
+
+#low_bar{
+    position: fixed;
+    top: 88%;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 15;
+    width: 104%;
+    height: 16%
+}
+
+#low_control_bar {
+    background: url(../../media/IMG/props/menu_bar.png);
+    position: fixed;
+    top: 88%;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 104%;
+    height: 16%
+}
+
+.game_clue_1 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 92%;
+    left: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%;
+    
+}
+
+.game_clue_1_y {
+    background: url(../../media/IMG/props/yellow_diamon_button.png);
+    position: fixed;
+    top: 92%;
+    left: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%;
+    transition: all 3s;
+    animation: blink_1 2s infinite linear;
+}
+
+@-webkit-keyframes blink_1{
+    0% {opacity: 0.0;}
+    50% {opacity: 1.0;height:5%;width: 4%;left: 19.5%;top: 91.5;}
+    100% {opacity: 0.0;}
+}
+
+@-webkit-keyframes blink_1_off{
+    0% {opacity: 1.0;height:4%;width: 3%;left: 20%;}
+}
+
+
+
+.game_clue_2 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 92%;
+    left: 24%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%
+}
+
+.game_clue_2_y {
+    background: url(../../media/IMG/props/yellow_diamon_button.png);
+    position: fixed;
+    top: 92%;
+    left: 24%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%;
+    transition: 1s;
+    animation: blink_2 2s infinite linear;
+}
+
+@-webkit-keyframes blink_2{
+    0% {opacity: 0.0;}
+    50% {opacity: 1.0;height:5%;width: 4%;left: 23.5%;top: 91.5;}
+    100% {opacity: 0.0;}
+}
+
+@-webkit-keyframes blink_2_off{
+    0% {opacity: 1.0;height:4%;width: 3%;left: 23.5%;}
+}
+
+
+.game_clue_3 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 92%;
+    left: 28%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%
+}
+
+.game_clue_3_y {
+    background: url(../../media/IMG/props/yellow_diamon_button.png);
+    position: fixed;
+    top: 92%;
+    left: 28%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%
+}
+
+.game_clue_4 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 92%;
+    left: 32%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%
+}
+
+.game_clue_4_y {
+    background: url(../../media/IMG/props/yellow_diamon_button.png);
+    position: fixed;
+    top: 92%;
+    left: 32%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%
+}
+
+.game_clue_5 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 92%;
+    left: 36%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%
+}
+
+.game_clue_5_y {
+    background: url(../../media/IMG/props/yellow_diamon_button.png);
+    position: fixed;
+    top: 92%;
+    left: 36%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 4%
+}
+
+#game_float {
+    background: url(../../media/IMG/props/float_button.png);
+    position: fixed;
+    top: 91%;
+    left: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 4.5%;
+    height: 6%;
+}
+
+#game_compass {
+    background: url(../../media/IMG/props/Compass_button.png);
+    position: fixed;
+    top: 90%;
+    left: 11%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 7%;
+}
+
+#close_botton {
+    background: url(../../media/IMG/props/brb_button.png);
+    position: fixed;
+    top: 91%;
+    left: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+
+#table_arthur_text {
+    overflow: auto;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 60.4%;
+    height: 69%;
+}
+
+#table_arthur_text::scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+#table_arthur_text::scrollbar {
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0, 0)
+}
+
+#table_arthur_text::scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.img_size_1_s_ag {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 39%;
+    left: 88.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 8;
+}
+
+.img_size_1_end_ag {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 72%;
+    left: 74.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 11;
+}
+
+.img_size_2_s_ag {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 75%;
+    left: 88.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 8;
+}
+
+.img_size_2_end_ag {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 72%;
+    left: 74.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 11;
+}
+
+.img_size_1_end_pi {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 79%;
+    left: 71.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 11;
+}
+
+.exit_icon_s {
+    background: url(../../media/IMG/props/exit_cros_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2%;
+    left: 89%;
+    width: 6%;
+    height: 8%;
+    z-index: 11;
+}
+
+.RP_face{
+    position: absolute;
+    width: 21%;
+    height: 39%;
+    top: 6%;
+    left: 60%;
+    z-index: -3;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    
+}
+
+.RP_face_up{
+    position: absolute;
+    width: 21%;
+    height: 39%;
+    top: 6%;
+    left: 60%;
+    z-index: 7;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+}
+
+.RP_face_2  {
+    position: absolute;
+    width: 21%;
+    height: 39%;
+    top: 6%;
+    left: 61%;
+    z-index: -3;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    
+}
+
+.RP_face_up_2{
+    position: absolute;
+    width: 21%;
+    height: 39%;
+    top: 6%;
+    left: 61%;
+    z-index: 7;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+}
+}

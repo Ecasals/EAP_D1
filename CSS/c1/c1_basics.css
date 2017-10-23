@@ -1,0 +1,349 @@
+#props_c1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+.cap_1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    z-index: -5;
+    transition: ease-out 7s;
+    transition-delay: 5s;
+    opacity: 0;
+}
+.cap_1_up{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    transition: ease-out 2s;
+    transition-delay: 5s;
+    opacity: 1;
+}
+.main_back_c1{
+    background: url(../../media/IMG/c1/backs/light_sea_sky.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+#c1_lh_all{
+    position: absolute;
+    top: 21%;
+    left: -9%;
+    width: 59%;
+    height: 54%;
+}
+.c1_lh{
+    background: url(../../media/IMG/c1/props/lh.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 60%;
+    height: 108%;
+    z-index: 6;
+    transition: all 4s linear;
+}
+
+.c1_lh_back{
+    background: url(../../media/IMG/c1/props/lh.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: -50%;
+    width: 60%;
+    height: 108%;
+    z-index: 6;
+    transition: all 4s linear;
+}
+
+.c1_lh_light{
+    background: url(../../media/IMG/c1/props/lh_light.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 108%;
+    z-index: 6;
+}
+
+#c1_water_all{
+    position: absolute;
+    top: 62%;
+    left: 0%;
+    width: 100%;
+    height: 42%;
+}
+.c1_water_behind{
+    background: url(../../media/IMG/c1/water/behind_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 29%;
+    z-index: 5;
+    animation: water_move 55s infinite linear;
+}
+
+@keyframes water_move{
+    0%{background-position:0px 0px}
+    25%{background-position:-1000px 20px}
+    50%{background-position:-2000px 0px}
+    75%{background-position:-3000px 20px}
+    100%{background-position:-4000px 0px}}
+
+.c1_water_higger{
+    background: url(../../media/IMG/c1/water/higger_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    width: 100%;
+    height: 22%;
+    z-index: 6;
+    animation: water_move 55s infinite linear;
+   }
+.c1_water_up{
+    background: url(../../media/IMG/c1/water/upp_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    width: 100%;
+    height: 29.5%;
+    z-index: 7;
+    animation: water_move 55s infinite linear;
+}
+.c1_water_mid{
+    background: url(../../media/IMG/c1/water/mid_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 32%;
+    left: 0%;
+    width: 100%;
+    height: 22%;
+    z-index: 8;
+    animation: water_move 55s infinite linear;
+}
+.c1_water_down{
+    background: url(../../media/IMG/c1/water/lower_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 38%;
+    left: -1%;
+    width: 101%;
+    height: 43.3%;
+    z-index: 9;
+    animation: water_move 55s infinite linear;
+}
+.c1_ship{
+    background: url(../../media/IMG/c1/props/ship.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12%;
+    left: 26%;
+    width: 58%;
+    height: 60%;
+    z-index: 5;
+    transform-origin: top center;
+    animation: ship_move 10s infinite linear;
+}
+@keyframes ship_move {
+    0% {
+        transform: rotate(0deg);
+        background-position: 5px 0px;
+    }
+    25% {
+        transform: rotate(-2deg);
+        background-position: -5px 10px;
+    }
+    50% {
+        transform: rotate(0deg);
+        background-position: 5px 0px;
+    }
+    75% {
+        transform: rotate(2deg);
+        background-position: -5px 10px;
+    }
+    100% {
+        transform: rotate(0deg);
+        background-position: 5px 0px;
+    }
+}
+
+.c1_ship_anm{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    width: 0;
+	height: 0;
+	    border-left: 94px solid transparent;
+    border-right: 456px solid transparent;
+    border-bottom: 425px solid transparent;
+    z-index:7;
+}
+
+.c1_dofi_petit{
+    background: url(../../media/IMG/c1/props/dofi_petit.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 6%;
+    left: 49%;
+    width: 5%;
+    height: 35%;
+    z-index: 6;
+    transform-origin: bottom center;
+    animation: dofi_petit 45s infinite linear;
+}
+@keyframes dofi_petit {
+    0% {
+        transform: rotate(180deg);
+        
+    }
+    25% {
+        transform: rotate(200deg);
+        
+    }
+    31% {
+        transform: rotate(570deg);
+        
+    }
+    75% {
+        transform: rotate(580deg);
+        
+    }
+    100% {
+        transform: rotate(590deg);
+        
+    }
+}
+
+.c1_dofi_mitg{
+    background: url(../../media/IMG/c1/props/dofi_petit.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 9%;
+    left: 52%;
+    width: 7%;
+    height: 40%;
+    z-index: 6;
+    transform-origin: bottom center;
+    animation: dofi_mitg 15s infinite linear;
+}
+@keyframes dofi_mitg {
+    0% {
+        transform: rotate(180deg);
+        
+    }
+    25% {
+        transform: rotate(200deg);
+        
+    }
+    45% {
+        transform: rotate(570deg);
+        
+    }
+    75% {
+        transform: rotate(580deg);
+        
+    }
+    100% {
+        transform: rotate(590deg);
+        
+    }
+}
+
+.c1_dofi_gran{
+    background: url(../../media/IMG/c1/props/dofi_petit.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 23%;
+    left: 60%;
+    width: 9%;
+    height: 40%;
+    z-index: 7;
+    transform-origin: bottom center;
+    animation: dofi_gran 30s infinite linear;
+}
+@keyframes dofi_gran {
+    0% {
+        transform: rotate(180deg);
+        
+    }
+    25% {
+        transform: rotate(200deg);
+        
+    }
+    35% {
+        transform: rotate(570deg);
+        
+    }
+    75% {
+        transform: rotate(580deg);
+        
+    }
+    100% {
+        transform: rotate(590deg);
+        
+    }
+}
+
+.c1_seagulls{
+    background: url("../../media/IMG/c1/props/seagulls.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    z-index: 6;
+    transform-origin: top center;
+    animation: seagulls 55s infinite linear;
+}
+
+@keyframes seagulls {
+    0% {
+        background-position: -500px -50px;
+    }
+    20% {
+        background-position: -1000px -150px;
+    }
+    40% {
+        background-position: -1500px -20px;
+    }
+    60% {
+        background-position: -2000px -20px;
+    }
+    80% {
+        background-position: -2500px -150px;
+    }
+    100% {
+        background-position: -3000px -50px;
+    }
+}

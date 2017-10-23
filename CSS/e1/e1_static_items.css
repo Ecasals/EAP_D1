@@ -1,0 +1,37 @@
+@media only screen and (max-device-width : 1024px) {
+#desk{background-image:url(../../media/IMG/props/desk.png);position:fixed;top:55%;left:-2.5%;background-size:contain;background-repeat:no-repeat;z-index:1;width:37%;height:32%}
+.chair{background-image:url(../../media/IMG/props/cahir.png);position:fixed;top:53%;left:37.4%;background-size:contain;background-repeat:no-repeat;z-index:1;width:12%;height:31%}
+.chair_e3{background-image:url(../../media/IMG/props/cahir.png);position:fixed;top:53%;left:40.5%;background-size:contain;background-repeat:no-repeat;z-index:1;width:12%;height:31%}
+#couch{background-image:url(../../media/IMG/props/couch.png);position:fixed;top:46%;left:64%;background-size:contain;background-repeat:no-repeat;z-index:1;width:33%;height:38%}
+#row{background-image:url(../../media/IMG/props/row.png);position:fixed;top:20%;left:33%;background-size:contain;background-repeat:no-repeat;z-index:0;width:5%;height:63%}
+#float{background-image:url(../../media/IMG/props/float.png);position:fixed;top:57%;left:56%;background-size:contain;background-repeat:no-repeat;z-index:0;width:19%;height:24%}
+#horse{background-image:url(../../media/IMG/props/horse_wall.png);position:fixed;top:3%;left:81.5%;background-size:contain;background-repeat:no-repeat;z-index:0;width:25%;height:47%}
+#ropes{background-image:url(../../media/IMG/props/ropes.png);position:fixed;top:-3%;left:-2.5%;background-size:contain;background-repeat:no-repeat;z-index:0;width:51%;height:39%}
+#flags{background-image:url(../../media/IMG/props/flags.png);position:fixed;top:-1%;left:-2.5%;background-size:contain;background-repeat:no-repeat;z-index:0;width:25%;height:23%}
+#ship{background-image:url(../../media/IMG/props/ship.png);position:fixed;top:15%;left:-4.5%;background-size:contain;background-repeat:no-repeat;z-index:0;width:31%;height:40%}
+.window_all{position: fixed;top: 0%;left: 61%;width: 19.6%;height: 31%;}
+.window_all_anm{position: fixed;top: -90%;left: -25%;width: 150%;height: 235%; z-index: 5; transition: all 4s linear;}
+.window_fe{background-image:url(../../media/IMG/window_fish_eye/window_fish_eye.png);position: absolute;top: -54%;left: 4px;background-size: contain;background-repeat: no-repeat;z-index: 3;
+width: 98%;height: 154.5%;}
+.window_fe_close{background-image:url(../../media/IMG/window_fish_eye/window_fish_eye_close.png);position: absolute;top: 43px;left: 4px;background-size: contain;background-repeat: no-repeat;z-index: 3;width: 98%;
+height: 82.3%;}
+#window_fe_back{background-image:url(../../media/IMG/window_fish_eye/window_back.png);position: absolute;top: 23.8%;left: 6.5%;background-size: contain;background-repeat: no-repeat;z-index: -1;
+width: 88%;height: 69%;}
+#window_fe_shadow{background-image:url(../../media/IMG/window_fish_eye/window_shadow.png);position:absolute;top: 23.8%;    left: 11%;background-size: contain;background-repeat: no-repeat;z-index: 2;width: 88%;    height: 69%;}
+#window_fe_lh{background-image:url(../../media/IMG/props/lighthouse.png);position: absolute;top: 41.8%;left: 8%;background-size: contain;background-repeat: no-repeat;z-index: 1;width: 35%; height: 37%;}
+#earth{background-image:url(../../media/IMG/props/earthballon.png);position:fixed;top:38%;left:10.5%;background-size:contain;background-repeat:no-repeat;z-index:0;width:10%;height:17%}
+#cup{display:none;background-image:url(../../media/IMG/props/cup.png);position:fixed;top:50.3%;left:30.5%;background-size:contain;background-repeat:no-repeat;z-index:1;width:4%;height:5%}
+#sea_shell{background-image:url(../../media/IMG/props/big_shell.png);position:fixed;top: 51.5%;
+left: 7%;background-size:contain;background-repeat:no-repeat;z-index:1;width:6%;height:4%}
+#sea_shell_sound{position:fixed;top: 51.5%;left: 7%;background-size:contain;background-repeat:no-repeat;z-index:5   ;width:6%;height:4%}
+#shell{background-image:url(../../media/IMG/props/small_shell.png);position:fixed;top: 51.1%;
+left: 18%;background-size:contain;background-repeat:no-repeat;z-index:1;width:4%;height:4%}
+#megafon{background-image:url(../../media/IMG/props/megafon.png);position:fixed;top: 36%;
+left: 20%;background-size:contain;background-repeat:no-repeat;z-index:-1;width: 9%;height: 19%;}
+#timo{background-image:url(../../media/IMG/props/timo.png);position:fixed;top: 37%;left: 55%;background-size:contain;background-repeat:no-repeat;z-index:-1;width: 33%;height: 45%;}
+#anafora{background-image:url(../../media/IMG/props/anfora.png);position:fixed;top: 44%;
+left: 92%;background-size:contain;background-repeat:no-repeat;z-index:0;width: 7%;
+height: 39%;}
+#politja_larg{background-image:url(../../media/IMG/props/polutja_larg.png);position:fixed;top: 8.6%;left: 39%;background-size:contain;background-repeat:no-repeat;z-index:0;width: 5%;height: 41%;
+}
+}
