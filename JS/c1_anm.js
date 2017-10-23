@@ -10,7 +10,7 @@
 document.getElementById("text_joe_13").onclick = function () {
     if (document.getElementById("text_joe_13").className === "text_joe_13_mid") {
         document.getElementById("text_joe_13").className = "text_joe_13_end";
-        document.getElementById("intro").style.display = "none";
+        document.getElementById("intro").style.height = "0";
         document.getElementById("cap_1").style.zIndex = "1";
         document.getElementById("c1_lh").className = "c1_lh_back";
     }
